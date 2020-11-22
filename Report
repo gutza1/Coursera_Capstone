@@ -1,0 +1,12 @@
+-- Introduction/Business --
+
+With a population that has grown from 2,500,000 to 3,000,000 in the last two decades, Toronto is a burgeoning and dynamic city, with plenty of business opportunities. One of those is opening a restaurant to service Toronto's population. However, a good choice of location is critical for the success of a restaurant, but identifying one may be difficult. This is where machine learning can be used to identify the average popularity of restaurants in each of Toronto's neighborhoods that lie inside the main five boroughs, indicating which neighborhood an enterprising restaurant owner should start their venue in.
+
+-- Data --
+
+To find the most profitable neighborhoods for restaurants in central Toronto, two kinds of data is required: geographical data, and venue data. The geographical data that this project will be using is Wikipedia's list of every Toronto neighborhood and its postal code, as well as a CSV file containing the geographical coordinates of each postal code. 
+
+Wikipedia list: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
+CSV file: https://cocl.us/Geospatial_data
+
+Venue data will be acquired through Fourspace and its API. The project will be fetching the checkinsCount variable for each venue.
