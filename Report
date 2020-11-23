@@ -7,6 +7,11 @@ With a population that has grown from 2,500,000 to 3,000,000 in the last two dec
 To find the most profitable neighborhoods for restaurants in central Toronto, two kinds of data is required: geographical data, and venue data. The geographical data that this project will be using is Wikipedia's list of every Toronto neighborhood and its postal code, as well as a CSV file containing the geographical coordinates of each postal code. 
 
 Wikipedia list: https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
+
+Example (Postal Code, Borough, Neighbourhood): [M3A, North York, Parkwoods]
+
 CSV file: https://cocl.us/Geospatial_data
 
-Venue data will be acquired through Fourspace and its API. The project will be fetching the checkinsCount variable for each venue.
+Example (Postal Code, Latitude, Longitude): [M3A, 43.7532586, -79.3296565]
+
+Venue data will be acquired through Fourspace and its API. The project will be fetching the checkinsCount variable, from stats (takes the form of [checkinsCount, usersCount, tipCount] for each venue.
