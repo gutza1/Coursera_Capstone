@@ -14,4 +14,27 @@ CSV file: https://cocl.us/Geospatial_data
 
 Example (Postal Code, Latitude, Longitude): [M3A, 43.7532586, -79.3296565]
 
-Venue data will be acquired through Fourspace and its API. The project will be fetching the checkinsCount variable, from stats (takes the form of [checkinsCount, usersCount, tipCount] for each venue.
+Venue data will be acquired through Fourspace and its API. The project will be fetching the tipCount variable, from stats (takes the form of [checkinsCount, usersCount, tipCount] for each venue.
+
+-- Methodology --
+
+The analysis will use the number of tips recorded per restaurant as a proxy for profitability, and will find the total number of tips per neighborhood to estimate the suitability of a neighborhood for a restaurant. No machine learning is necessary.
+
+-- Results --
+
+These are the top ten neighbourhoods in Toronto's central five boroughs, sorted in descending order by the total tip count of each restaurant in it:
+
+	Neighbourhood	                            Tip Count
+3	St. James Town	                            247
+14	Commerce Court, Victoria Hotel	            234
+11	Toronto Dominion Centre, Design Exchange	190
+7	Richmond, Adelaide, King	                187
+23	First Canadian Place, Underground city	    187
+2	Garden District, Ryerson	                113
+21	Stn A PO Boxes	                            91
+4	Berczy Park	                                89
+24	Church and Wellesley	                    88
+18	University of Toronto, Harbord	            38
+
+It seems that the most profitable areas are St. James Town and Commerce Court, followed by the Toronto Dominion Centre, Richmond, and First Canadian Place. An entrepeneur who wishes to start a restaurant in Toronto should try to find a location in the first two neighborhoods, but if the price of real estate in those neighborhoods are too expensive, the latter three will also suffice.
+
